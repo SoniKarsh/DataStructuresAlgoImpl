@@ -3,8 +3,8 @@
 
 
 def gcd(n1, n2):
-    global mocn
-    for i in range(1, min(n1, n2)):
+    mocn = 0
+    for i in range(1, min(n1, n2) + 1):
         if n1 % i == 0 and n2 % i == 0:
             # Maximum of common numbers.
             mocn = i
